@@ -5,7 +5,7 @@
 
     <div class="footer-wrap">
         <div class="footer-inner"> 
-            <%= config.title %> &copy; 2013 - <%= date(new Date(), 'YYYY') %><br>
+            <%= config.title %> &copy; 2020 - <%= date(new Date(), 'YYYY') %><br>
             Powered By Hexo · Theme By <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Aomori</a>
         </div>
     </div>
@@ -13,11 +13,11 @@
 </footer>
 
 <% if (config.aomori_gitalk){ %>
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://renguangli.gitee.io/gitalk/gitalk.min.js"></script>
 <% } %>
 
-<%- js('dist/build.js?' + theme.version) %>
-<%- js('dist/custom.js?' + theme.version) %>
+<%- js('https://renguangli.gitee.io/dist/build.js?' + theme.version) %>
+<%- js('https://renguangli.gitee.io/dist/custom.js?' + theme.version) %>
 
 <% if (config.aomori_baidu_sitepush) { %>
 <!-- 百度链接提交 -->
